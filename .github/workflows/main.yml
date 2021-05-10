@@ -29,7 +29,11 @@ jobs:
         run: cmake .
 
       - name: Make
-        run: make rectangle
+        run: make 
 
       - name: Execute rectangle executable
         run: ./rectangle
+
+      - name: Execute test executable
+        run: ./test
+
