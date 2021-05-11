@@ -42,4 +42,9 @@ TEST(Area, width3_height3) {
     EXPECT_EQ(rect1->area(), 9);
 }
 
+TEST(Area, width0_height5) {
+    Rectangle* rect1 = new Rectangle(0, 5);
+    EXPECT_EQ(rect1->area(), 5);
+}
+
 #endif //__RECTANGLE_TEST_HPP__
