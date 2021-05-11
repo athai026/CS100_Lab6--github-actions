@@ -27,4 +27,9 @@ TEST(Perimeter, width3_height3) {
     EXPECT_EQ(rect1->perimeter(), 12);
 }
 
+TEST(Perimeter, width0_height5) {
+    Rectangle* rect1 = new Rectangle(0, 5);
+    EXPECT_EQ(rect1->perimeter(), 12);
+}
+
 #endif //__RECTANGLE_TEST_HPP__
