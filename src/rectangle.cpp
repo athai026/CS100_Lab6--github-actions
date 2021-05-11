@@ -7,14 +7,14 @@ Rectangle::Rectangle(int w, int h) {
         width = w;
     }
     else {
-        throw "Cannot have negative or zero width";
+        width = 1;
     }
 
     if (h > 0) {
         height = h;
     }
     else {
-        throw "Cannot have negative or zero height";
+        height = 1;
     }
 }
 
@@ -27,21 +27,11 @@ void Rectangle::set_height(int h) {
 }
 
 int Rectangle::get_width() {
-    if (width > 0) {
-        return this->width;
-    }
-    else {
-        throw "Cannot have negative or zero width";
-    }
+    return this->width;
 }
 
 int Rectangle::get_height() {
-    if (height > 0) {
-        return this->height;
-    }
-    else {
-        throw "Cannot have negative or zero height";
-    }
+    return this->height;
 }
 
 int Rectangle::area() {
