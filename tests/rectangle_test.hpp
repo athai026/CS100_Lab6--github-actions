@@ -37,4 +37,9 @@ TEST(Perimeter, widthneg1_heightneg4) {
     EXPECT_EQ(rect1->perimeter(), 4);
 }
 
+TEST(Area, width3_height3) {
+    Rectangle* rect1 = new Rectangle(3, 3);
+    EXPECT_EQ(rect1->area(), 9);
+}
+
 #endif //__RECTANGLE_TEST_HPP__
