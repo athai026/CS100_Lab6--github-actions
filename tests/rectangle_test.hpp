@@ -16,4 +16,10 @@ TEST(Constructor, width0_height5) {
     EXPECT_EQ(rect1->get_height(), 5);
 }
 
+TEST(Constructor, widthneg1_heightneg4) {
+    Rectangle* rect1 = new Rectangle(-1, -4);
+    EXPECT_EQ(rect1->get_width(), 1);
+    EXPECT_EQ(rect1->get_height(), 1);
+}
+
 #endif //__RECTANGLE_TEST_HPP__
